@@ -1,5 +1,5 @@
 import React from "react";
-import menu from "./data/menu.json";
+import menu from "./public/menu.json";
 
 const Menu = () => {
   const burguers = menu.hamburguesa;

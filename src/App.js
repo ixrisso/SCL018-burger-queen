@@ -1,15 +1,14 @@
-import './App.css';
 import React from "react";
-import {Route, Routes, BrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
-import Kitchen from "./components/Kitchen";
-import Waiter from "./components/Waiter";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Kitchen from "./components/Kitchen/Kitchen";
+import Waiter from "./components/Waiter/Waiter";
 
-const App = () => {
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Waiter" element={<Waiter />} />
+        <Route path="/Waiters" element={<Waiter />} />
         <Route path="/kitchen" element={<Kitchen />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -18,4 +17,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Router;
