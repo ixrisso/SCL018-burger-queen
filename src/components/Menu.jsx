@@ -1,14 +1,17 @@
-import React from "react";
-import menu from "./public/menu.json";
+import React, { useEffect, useState, useContext } from "react";
+import menu from "./data/menu";
 
 const Menu = () => {
   const burguers = menu.hamburguesa;
+/*   const globalContext = useContext(Context);
+  const [product, changeProduct] = useState(Button); */
+
   const drinks = menu.liquido;
   return (
     <section>
       <h1>Menú</h1>
       
-      <div>
+      {<div>
         {burguers.map((e, index) => {
           return (
             <button key={index}>
@@ -19,7 +22,7 @@ const Menu = () => {
         })}
       </div>
 
-      <div>
+/*       <div>
         {drinks.map((e, index) => {
           return (
             <button key={index}>
@@ -28,7 +31,7 @@ const Menu = () => {
             </button>
           );
         })}
-      </div>
+      </div> */}
 
     </section>
   );
