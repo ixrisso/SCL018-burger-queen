@@ -1,0 +1,88 @@
+{
+  "hamburguesa": [
+    {
+      "id": "1",
+      "tipo": "chacarera",
+      "precio": "3900",
+      "img": "imagen"
+    },
+    {
+      "id": "2",
+      "tipo": "alemana",
+      "precio": "3900",
+      "img": "imagen"
+    },
+    {
+      "id": "3",
+      "tipo": "griega",
+      "precio": "3900",
+      "img": "imagen"
+    },
+    {
+      "id": "4",
+      "tipo": "americana",
+      "precio": "3900",
+      "img": "imagen"
+    },
+    {
+      "id": "5",
+      "tipo": "vurger imperdible",
+      "precio": "3200",
+      "img": "imagen"
+    }
+  ],
+  "hamburguesa a tu pinta": {
+    "pan": ["tradicional", "integral", "zapallo", "betarraga", "sin gluten"],
+    "proteina": ["seitán", "soya", "quinoa", "falafel"],
+    "salsas": ["yogurt-cilantro", "morron-albahaca"],
+    "ingredientes": [
+      "lechuga",
+      "tomate",
+      "cebolla morada",
+      "ají",
+      "chucrut",
+      "poroto verde",
+      "pepinillo",
+      "aceituna"
+    ],
+    "precio": "",
+    "img": "imagen"
+  },
+  "liquido": [
+    {
+      "id": "20",
+      "limonada": [
+        {
+          "sabor": "limón"
+        },
+        {
+          "sabor": "jengibre"
+        },
+        {
+          "sabor": "menta"
+        },
+        {
+          "sabor": "miel"
+        }
+      ],
+      "precio": "1500",
+      "img": "imagen"
+    },
+    {
+      "id": "21",
+      "jugo": [
+        {
+          "sabor": "zanahoria"
+        },
+        {
+          "sabor": "naranja"
+        },
+        {
+          "sabor": "pepino"
+        }
+      ],
+      "precio": "1500",
+      "img": "imagen"
+    }
+  ]
+}
