@@ -1,23 +1,16 @@
 import React from 'react'
-/* import Menu from "./Menu" */
-import menu from "./data/menu";
+import Menu from './Menu'
+
 
 const Waiter = () => {
-    const burguers = menu.hamburguesa;
-    return (
-      <section>
-        <h1>Menú</h1>
-        
-        {<div>
-          {burguers.map((e, index) => {
-            return (
-              <button key={index}>
-                <h3>{e.tipo}</h3>
-                <h5>{e.precio}</h5>
-              </button>
-            );
-          })}
-        </div>}
-    </section>
-)};
+
+         return (
+
+         <>
+         <h2>Aquí va la sección para pedir pedidos</h2>
+         <h4>Luego toca ver la data</h4>
+           <Menu/>
+        </>
+         )
+}
 export default Waiter
