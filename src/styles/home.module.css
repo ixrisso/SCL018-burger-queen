@@ -1,0 +1,42 @@
+.containerHome  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+/*     align-items: center; */
+    justify-content: space-around;
+/*     width: 34.4vw;
+    height: 50vh;
+    margin-bottom: 5%; */
+  }
+  
+  .buttonWaiter,
+  .buttonKitchen {
+    display: flex;
+    flex-direction: row;
+   /*  width: 19.76vw;
+    height: 16vh; */
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 14px 28px;
+    background-color: #fbdeb5;
+    border: 7px solid#d17718;
+    border-color: #D17718;
+    border-radius: 10px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #d17718;
+    letter-spacing: 2px;
+  }
+
+  .buttonWaiter:hover,
+  .buttonKitchen:hover {
+background: #d17718;
+color: white;
+cursor: pointer;
+  }
