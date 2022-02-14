@@ -1,37 +1,79 @@
 {
-  "hamburguesa": [
+  "products": [
     {
-      "id": "1",
-      "tipo": "chacarera",
-      "precio": "3900",
-      "img": "imagen"
+      "id": "b1",
+      "name": "chacarera",
+      "price": 3900,
+      "section": "burger"
     },
     {
-      "id": "2",
-      "tipo": "alemana",
-      "precio": "3900",
-      "img": "imagen"
+      "id": "b2",
+      "name": "alemana",
+      "price": 3900,
+      "section": "burger"
     },
     {
-      "id": "3",
-      "tipo": "griega",
-      "precio": "3900",
-      "img": "imagen"
+      "id": "b3",
+      "name": "griega",
+      "price": 3900,
+      "section": "burger"
     },
     {
-      "id": "4",
-      "tipo": "americana",
-      "precio": "3900",
-      "img": "imagen"
+      "id": "b4",
+      "name": "americana",
+      "price": 3900,
+      "section": "burger"
     },
     {
-      "id": "5",
-      "tipo": "vurger imperdible",
-      "precio": "3200",
-      "img": "imagen"
-    }
+      "id": "b5",
+      "name": "vurger imperdible",
+      "price": 3200,
+      "section": "burger"
+    },
+    {
+      "id": "d1",
+      "name":"limonada",
+      "price": 1500,
+      "section": "drink"
+     },
+     {
+      "id": "d2",
+      "name":"limonada jengibre",
+      "price": 1500,
+      "section": "drink"
+     },
+     {
+      "id": "d3",
+      "name":"limonada menta",
+      "price": 1500,
+      "section": "drink"
+     },
+     {
+      "id": "d4",
+      "name":"limonada miel",
+      "price": 1500,
+      "section": "drink"
+     },
+     {
+      "id": "d5",
+      "name":"jugo zanahoria",
+      "price": 1500,
+      "section": "drink"
+     },
+     {
+      "id": "d6",
+      "name":"jugo naranja",
+      "price": 1500,
+      "section": "drink"
+     },
+     {
+      "id": "d7",
+      "name": "jugo pepino",
+      "price": 1500,
+      "section": "drink"
+     }
   ],
-  "hamburguesa a tu pinta": {
+  "atupinta": {
     "pan": ["tradicional", "integral", "zapallo", "betarraga", "sin gluten"],
     "proteina": ["seitán", "soya", "quinoa", "falafel"],
     "salsas": ["yogurt-cilantro", "morron-albahaca"],
@@ -45,44 +87,7 @@
       "pepinillo",
       "aceituna"
     ],
-    "precio": "",
-    "img": "imagen"
-  },
-  "liquido": [
-    {
-      "id": "20",
-      "limonada": [
-        {
-          "sabor": "limón"
-        },
-        {
-          "sabor": "jengibre"
-        },
-        {
-          "sabor": "menta"
-        },
-        {
-          "sabor": "miel"
-        }
-      ],
-      "precio": "1500",
-      "img": "imagen"
-    },
-    {
-      "id": "21",
-      "jugo": [
-        {
-          "sabor": "zanahoria"
-        },
-        {
-          "sabor": "naranja"
-        },
-        {
-          "sabor": "pepino"
-        }
-      ],
-      "precio": "1500",
-      "img": "imagen"
-    }
-  ]
+    "precio": ""
+  }
+  
 }

@@ -6,14 +6,14 @@ import Waiter from "./components/Waiter";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <>
       <Routes>
         <Route path="/Waiter" element={<Waiter />} />
         <Route path="/Kitchen" element={<Kitchen />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/" element={<Home />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 };
 

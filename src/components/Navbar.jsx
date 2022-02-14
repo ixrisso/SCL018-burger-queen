@@ -1,35 +1,37 @@
 /* import '../components.css'; */
 import { Link } from "react-router-dom";
-import styles from "../styles/waiter.module.css";
-import React, { Fragment } from 'react';
+import React  from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBurger,
+  faHouse,
+  faUtensils,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-    return (
-        <div className={styles.navbar}>
-            <Fragment>
-       <Link to="/">
-       <img className="header_logo" src= {logo} alt="page logo" /></Link>
-      </Fragment>
-      <header className={styles.logo}>
-        <img src={logo} className={styles.appLogo} alt="logo" />
+  /* const homeIcon = <FontAwesomeIcon icon={faHouse} />; */
+  return (
+    <div>
+      <header>
+      Kinwa
         <Link to="/">
-          <img
-            src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/000000/external-web-homepage-button-to-redirects-at-main-page-basic-tritone-tal-revivo.png"
-            alt="home"
-            className={styles.return}
-          />
+          <FontAwesomeIcon icon={faHouse} />
+          {/*  alt="home"
+            className={styles.return} */}
         </Link>
-        <Link to="/kitchen">
-          <img
-            src="https://img.icons8.com/fluency/48/000000/frying-pan.png"
-            alt="kitchen"
-            className={styles.kitchen}
-          />
+        <Link to="/Waiter">
+          <FontAwesomeIcon icon={faBurger} />
+          {/*  alt="home"
+            className={styles.return} */}
+        </Link>
+        <Link to="/Kitchen">
+          <FontAwesomeIcon icon={faUtensils} />
+          {/*  alt="kitchen"
+            className={styles.kitchen} */}
         </Link>
       </header>
-        </div>
-        
-    )
-}
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
