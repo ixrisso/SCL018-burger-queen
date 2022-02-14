@@ -9,25 +9,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-  /* const homeIcon = <FontAwesomeIcon icon={faHouse} />; */
   return (
     <div>
       <header>
       Kinwa
         <Link to="/">
           <FontAwesomeIcon icon={faHouse} />
-          {/*  alt="home"
-            className={styles.return} */}
+          
         </Link>
         <Link to="/Waiter">
           <FontAwesomeIcon icon={faBurger} />
-          {/*  alt="home"
-            className={styles.return} */}
-        </Link>
+          </Link>
         <Link to="/Kitchen">
           <FontAwesomeIcon icon={faUtensils} />
-          {/*  alt="kitchen"
-            className={styles.kitchen} */}
         </Link>
       </header>
     </div>

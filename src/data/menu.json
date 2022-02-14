@@ -1,5 +1,5 @@
 {
-  "products": [
+  "burgers": [
     {
       "id": "b1",
       "name": "chacarera",
@@ -29,7 +29,9 @@
       "name": "vurger imperdible",
       "price": 3200,
       "section": "burger"
-    },
+    }
+  ],
+  "drinks":[
     {
       "id": "d1",
       "name":"limonada",

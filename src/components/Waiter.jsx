@@ -1,34 +1,47 @@
-import React, { useContext } from "react";
-import { GlobalState } from "./Context";
-import Menu from "./Menu";
+import React, { useState, useContext } from 'react';
+import menu from '../data/menu';
+import Client from './Client';
+import { globalContext } from '../App';
+import Order from './Order';
 import Navbar from "./Navbar";
-import Order from "./Order";
 
-const Waiter = () => {
-  const globalContext = useContext(GlobalState);
-  console.log(globalContext);
-  const onChange = (e) => {
-    if (e.target.name === "client") {
-      globalContext.changeClient(e.target.value);
-    } else if (e.target.name === "table") {
-      globalContext.changeTable(e.target.value);
-    }
+function Waiter() {
+  const menuContext = useContext(globalContext);
+
+  const [food, setFood] = useState([]);
+
+  const toFilter = (category) => {
+    setFood(menu[category]);
   };
-  const sendOrder = () => {
-    if (globalContext.client === "" || globalContext.table === "") {
-      /* console.log('algo anda mal, intenta de nuevo 😸') */;
-    } else if (globalContext.products.length === 0) {
-      /* console.log('algo anda mal, intenta de nuevo 😸') */;
-    } else {
-      console.log('todo bien 😸'),
-      
-/*          globalContext.resumeOrder();
-          globalContext.setProducts([]);
-          globalContext.changeClient("");
-          globalContext.changeTable(""); */
-  }};
-
+  const handleAdd = (item) => {
+    menuContext.addItems(item);
+  };
   return (
+    <>
+      <Navbar />
+      <Client />
+      <div>
+        <button  type="button" onClick={() => toFilter('burgers')}>Hamburguesas</button>
+        <button type="button" onClick={() => toFilter('drinks')}>Bebidas</button>
+        {food.map((item) => (
+          <button  type="button" key={item.id} onClick={() => handleAdd(item)}>
+            <section>{item.name}</section>
+            <section>
+              $
+              {' '}
+              {item.price}
+            </section>
+          </button>
+        ))}
+        <Order />
+      </div>
+
+    </>
+  );
+}
+
+export default Waiter;
+  /* return (
     <>
       <Navbar />
       <main>
@@ -80,4 +93,4 @@ const Waiter = () => {
     </>
   );
       }
-export default Waiter;
+export default Waiter; */
