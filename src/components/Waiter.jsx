@@ -13,7 +13,7 @@ function Waiter() {
   const toFilter = (category) => {
     setFood(menu[category]);
   };
-  const handleAdd = (item) => {
+  const itemAdd = (item) => {
     menuContext.addItems(item);
   };
   return (
@@ -24,7 +24,7 @@ function Waiter() {
         <button  type="button" onClick={() => toFilter('burgers')}>Hamburguesas</button>
         <button type="button" onClick={() => toFilter('drinks')}>Bebidas</button>
         {food.map((item) => (
-          <button  type="button" key={item.id} onClick={() => handleAdd(item)}>
+          <button  type="button" key={item.id} onClick={() =>itemAdd(item)}>
             <section>{item.name}</section>
             <section>
               $

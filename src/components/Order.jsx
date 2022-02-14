@@ -6,15 +6,15 @@ import { globalContext } from '../App';
 function Order() {
   const menuContext = useContext(globalContext);
 
-  const handleDelete = (id) => {
+  const itemDelete = (id) => {
     menuContext.removeOrderItem(id);
   };
 
-  const handleIncrease = (id) => {
+  const itemIncrease = (id) => {
     menuContext.increaseItem(id);
   };
 
-  const handleDecrease = (id) => {
+  const itemDecrease = (id) => {
     menuContext.decreaseItem(id);
   };
 
@@ -86,14 +86,14 @@ function Order() {
 
           </section>
           <div>
-            <button type="button" onClick={() => handleDecrease(item.id)}> - </button>
+            <button type="button" onClick={() => itemDecrease(item.id)}> - </button>
             <p>
               {'   '}
               {item.count}
             </p>
-            <button type="button" onClick={() => handleIncrease(item.id)}> + </button>
+            <button type="button" onClick={() => itemIncrease(item.id)}> + </button>
           </div>
-          <button  type="button" onClick={() => handleDelete(item.id)}>Delete</button>
+          <button  type="button" onClick={() => itemDelete(item.id)}>Borrar</button>
           <p>
             $
             {' '}

@@ -52,6 +52,17 @@ function App() {
         : orderItem),
     });
   }, [items]);
+  const editStatus = useCallback(async (id, status) => {
+    setOrderStatus(true);
+    try {
+      const ordersRef = doc(db, 'orders', id);
+      await updateDoc(ordersRef, {
+        status: status,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
   const value = useMemo(() => ({
     orderStatus,
@@ -66,7 +77,8 @@ function App() {
     removeOrderItem,
     increaseItem,
     decreaseItem,
-  }), [orderStatus, addItems,  increaseItem,
+    editStatus
+  }), [orderStatus, addItems,  increaseItem, editStatus,
     decreaseItem, items, name, removeOrderItem, table]);
   return (
 
